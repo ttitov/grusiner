@@ -3871,15 +3871,43 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none;
 }
+.ui-select{width: 100%}
+/* This is to remove the arrow of select element in IE */
+select::-ms-expand {  display: none; }
+select{
+    -webkit-appearance: none;
+    appearance: none;
+}
+@-moz-document url-prefix(){
+  .ui-select{border: 1px solid #CCC; border-radius: 4px; box-sizing: border-box; position: relative; overflow: hidden;}
+  .ui-select select { width: 110%; background-position: right 30px center !important; border: none !important;}
+}
 
+.button-active {
+  color: #f4623a;
+}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+}
+.nav-link-button {
+  padding: 0 1rem;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
 }
+
+.nav-last-item {
+
+} 
 
 .nav-link.disabled {
   color: #6c757d;
@@ -3990,6 +4018,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  padding-right: 16px !important;
 }
 
 .navbar-nav .nav-link {
@@ -6258,7 +6287,7 @@ button.bg-warning:focus {
   background-color: #dc3545 !important;
 }
 
-a.bg-danger:hover, a.bg-danger:focus,
+a.bg-danger:hover, a.bg-danger:focus
 button.bg-danger:hover,
 button.bg-danger:focus {
   background-color: #bd2130 !important;
@@ -6268,7 +6297,7 @@ button.bg-danger:focus {
   background-color: #f8f9fa !important;
 }
 
-a.bg-light:hover, a.bg-light:focus,
+a.bg-light:hover, a.bg-light:focus
 button.bg-light:hover,
 button.bg-light:focus {
   background-color: #dae0e5 !important;
@@ -6278,7 +6307,7 @@ button.bg-light:focus {
   background-color: #343a40 !important;
 }
 
-a.bg-dark:hover, a.bg-dark:focus,
+a.bg-dark:hover, a.bg-dark:focus
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important;
@@ -9654,11 +9683,30 @@ hr.light {
     color: #f4623a;
   }
 }
+.text-main {
+  padding-top: 25px;
+  font-size: larger;
+  padding-bottom: 15px;
+}
+
+.text-country {
+  padding-left: 1%;
+}
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead-travel {
+  padding-top: 15rem;
+  padding-bottom: calc(10rem - 72px);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead-travel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
