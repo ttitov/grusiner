@@ -54,5 +54,24 @@
       tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     }
   });
+  $('.js-by-year').click(function(){
+    if ($('.js-years').hasClass('hide')) {
+      $('.js-years').removeClass('hide');
+      $('.js-countries').addClass('hide');
+      $('.js-by-countries').removeClass('active');
+      $('.js-by-year').addClass('active');
+    }
+
+  });
+    $('.js-by-countries').click(function(){
+    if ($('.js-countries').hasClass('hide')) {
+      $('.js-countries').removeClass('hide');
+      $('.js-years').addClass('hide');
+      $('.js-by-year').removeClass('active');
+      $('.js-by-countries').addClass('active');
+    }
+
+  });
+
 
 })(jQuery); // End of use strict

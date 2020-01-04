@@ -24,6 +24,8 @@ urlpatterns = [
     path('', v.index),
     path('i18n/', include('django.conf.urls.i18n')),
     path('travel/', v.travel),
+    path('books/', v.books),
+    path('guitars/', v.guitars),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

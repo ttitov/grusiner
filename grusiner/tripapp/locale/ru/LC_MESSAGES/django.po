@@ -21,13 +21,13 @@ msgstr ""
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: templates/index.html:35
-msgid "Go Home"
+msgid "Main page"
 msgstr "Домой"
 
 msgid "Wellcome to my homepage"
 msgstr "Добро пожаловать на мою страницу"
 
-msgid "About"
+msgid "About me"
 msgstr "Oбо мне"
 
 msgid "Services"
@@ -48,7 +48,7 @@ msgstr "Свяжись с нами!"
 msgid "Do you have any questions? Give us a call or send us an email and we will get back to you as soon as possible!"
 msgstr "Остались вопросы? Позвоните нам или отправьте электронное письмо, и мы свяжемся с вами как можно скорее!"
 
-msgid "My Travel"
+msgid "My Travels"
 msgstr "Мои путешествия"
 
 msgid "Here you can find full list of my travels except for those that I don't remember."
@@ -90,5 +90,11 @@ msgstr "Индонезия: о. Бали: Кута, Семеньяк, о Гил�
 msgid "Spain: Barcelona 2012"
 msgstr "Испания: Барселона 2012г"
 
+msgid "By countries"
+msgstr "По странам"
 
+msgid "By years"
+msgstr "По годам"
 
+msgid "Find Out More"
+msgstr "Листай дальше"

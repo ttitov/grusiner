@@ -1,0 +1,153 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Books Grusiner</title>
+
+  <!-- Font Awesome Icons -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="/books">{% trans 'Home' %}</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/">{% trans 'Main page' %}</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/">{% trans 'Main page' %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/travel">{% trans 'Travels' %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#books">{% trans 'Books' %}</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/guitars">{% trans 'Guitars' %}</a>
+          </li>
+          <li class="nav-item">
+       <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input name="next"  type="hidden" value="{{ redirect_to }}">
+                    {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+              <button id = "{{language.code}}" type="submit" class="nav-link-button" value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}  name="language" onclick="this.form.submit();">
+                {{ language.code }}
+              {% if LANGUAGE_CODE == language.code %} 
+              <script type="text/javascript">   
+                 document.getElementById("{{language.code}}").classList.add("button-active");
+              </script>{% endif %}
+              </button>                     
+              {% endfor %}
+          </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Masthead -->
+  <header class="masthead-books">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">{% trans 'My favorite books' %}</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">{% trans "Here you can find full list of my books except for those that I don't remember." %}</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#books">{% trans "Find Out More" %}</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Books Section -->
+  <section id="books">
+    <div> 
+      <p class="text-center mb-7 text-main title-text">{% trans "Some of books I suggested." %} </p>
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item js-by-countries active" aria-current="page">{% trans "By alphabet"%}</li>
+        <li class="breadcrumb-item js-by-year">{% trans "By years"%}</li>
+      </ol>
+    </nav>
+
+    <div class = "text-country">
+      <ul class="list-group js-countries">
+        <li class = "list-group-item">
+        	<p class="text mb-6">1. {% trans "Scar tissue" %} </p>
+        </li>
+        <li class = "list-group-item">
+        	<p class = "text mb-6">2. {% trans "Slash: The Autobiography" %}  </p>
+        </li>
+      </ul>
+      <ul class="list-group js-years hide">
+        <li class = "list-group-item">
+            <p class="text mb-6">{% trans "2019 <br> Slash: The Autobiography" %} </p>
+        </li>
+        <li class = "list-group-item">
+            <p class="text mb-6">{% trans "Scar tissue" %} </p>
+        </li>	
+        <li class = "list-group-item">
+         	<p class = "text mb-6">{% trans "2018 <br> ..." %}  </p>
+        </li> 
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">
+        <i class="footer-text">Copyright &copy; 2019-{%now "Y"%} - Grusiner </i>
+        <i class="fas fa-envelope fa-1x mb-3 text-muted footer-text"></i>
+        <a class="footer-text" href="mailto:grusiner@yahoo.com">t@grusiner.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.js' %}"></script>
+
+</body>
+
+</html>
