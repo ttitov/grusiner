@@ -45,6 +45,9 @@ msgstr "Привет :)"
 msgid "Guitars"
 msgstr "Гитары"
 
+msgid "By alphabet"
+msgstr "По алфавиту"
+
 msgid "Some info..."
 msgstr "Тут вы не найдете ничего полезного. Сайт создан в учебных целях и вся информация заполнена на отъебись."
 
@@ -84,14 +87,71 @@ msgstr "Германия: Берлин, Дрезден, Фюссен"
 msgid "Greece: Kos island, Rhodes island, may 2013y"
 msgstr "Греция: о Кос, о Родос май 2013г"
 
-msgid "Georgia: Tbilisi 1991"
-msgstr "Грузия: Тбилиси 1991г"
+msgid "Georgia: Tbilisi 1991, Gudauri, Mtskheta 2020"
+msgstr "Грузия: Тбилиси 1991г, Гудаури, Мцхета 2020г"
 
-msgid "Indonesia: Bali: Kuta, Semenyak, o Gili EIR October 2011"
+msgid "Indonesia: Bali: Kuta, Semenyak, Gili Air island, October 2011"
 msgstr "Индонезия: о. Бали: Кута, Семеньяк, о Гили Эир октябрь 2011г"
 
 msgid "Spain: Barcelona 2012"
 msgstr "Испания: Барселона 2012г"
+
+msgid "Italy: Milan, Rome, June 2013, Genoa September 2018"
+msgstr "Италия: Милан, Рим июнь 2013г Генуя сентябрь 2018"
+
+msgid "Canary Islands: island Tenerife (Santa Cruz, Costa Adeje, Los Cristianos) Gran Canaria (Las Palmos, Maspalmos) 2014"
+msgstr "Канарские острова: о Тенерифе (Санта круз, Коста Адехе, Лос Кристьянос) о. Гран-Канария (Лас Пальмос, Маспальмос) 2014"
+
+msgid "Kyrgyzstan: lake Issyk-Kul 1999, 1996"
+msgstr "Киргизия: озеро Иссык-куль 1999г, 1996 г"
+
+msgid "South Korea: Seoul, Inchun 2012" 
+msgstr "Корея Южная: Сеул, Инчун 2012г"
+
+msgid "Latvia: Riga 13-16 November 2016" 
+msgstr "Латвия: Рига 13-16 ноября 2016"
+
+msgid "Netherlands: Amsterdam February 2013, Rotterdam, Haarlem, Amsterdam November 2017" 
+msgstr "Нидерланды: Амстердам февраль 2013, Роттердам, Харлем, Амстердам ноябрь 2017"
+
+msgid "Russia: Bryansk(2019), Kazan, Kaliningrad (2019 March), Moscow, Novosibirsk, Orel (2019), Pereslavl-Zalessky, Ryazan, Saint Petersburg, Sevastopol, Smolensk (2019), Sochi (2016, 2017, 2019), Tambov, Tula (2019), Chelyabinsk, Altai, Uvarovo, Dmitrov, Vodniki, Lobnya, Dagestan: Makhachkala, 1991"  
+msgstr "Россия: Брянск(2019), Казань, Калининград (2019 март), Москва, Новосибирск, Орел (2019), Переславль-Залесский, Рязань, Санкт-Петербург, Севастополь, Смоленск (2019), Сочи (2016, 2017, 2019), Тамбов, Тула (2019), Челябинск, Алтай, Уварово, Дмитров, Водники, Лобня, Дагестан: Махачкала, 1991"
+
+msgid "Turkey: Kemer 2012" 
+msgstr "Турция: Кемер 2012 г"
+
+msgid "Uzbekistan: Tashkent 2019, Chervak" 
+msgstr "Узбекистан: Ташкент 2019, Червак"
+
+msgid "Ukraine: Dnepropetrovsk, Kiev" 
+msgstr "Украина: Днепропетровск, Киев"
+
+msgid "Croatia: Dubrovnik September 2016"
+msgstr "Хорватия: Дубровник сентябрь 2016"
+
+msgid "Montenegro: Budva, Podgorica September 2016" 
+msgstr "Черногория: Будва, Подгорица сентябрь 2016"
+
+msgid "Czech Republic: Prague, Karlovy vary March 2011"
+msgstr "Чехия: Прага, Карловы вары март 2011"
+
+msgid "USA: new York, Baltimore, Atlanta, Phoenix (Scottsdale), Miami December-January 2013-2014"
+msgstr "США: Нью-Йорк, Балтимор, Атланта, Финикс (Скаттсдейл), Майами декабрь-январь 2013-2014"
+
+msgid "Sweden: Burlenge, Falun, Stockholm 2014"
+msgstr "Швеция: Бурленге, Фалун, Стокгольм 2014"
+
+msgid "Belgium: Bruges, Knokke-Heist, Brussels, Antwerp 2017 October-November" 
+msgstr "Бельгия: Брюгге, Кнокке-Хейст, Брюссель, Антверпен 2017 октябрь-ноябрь"
+
+msgid "Japan: Tokyo may 2018, April-may 2019 Shizuoka, Chiba"
+msgstr "Япония: Токио май 2018, апрель-май 2019 Шизуока, Чиба"
+
+msgid "🇫🇷 Paris, Lyon, Frejus, Cannes, Nice, September 2018" 
+msgstr "🇫🇷 Париж, Лион, Фрежюс, Канны, Ницца сентябрь 2018"
+
+msgid "Monaco: 🇲🇨 September 2018"
+msgstr "Монако 🇲🇨 сентябрь 2018"
 
 msgid "By countries"
 msgstr "По странам"
